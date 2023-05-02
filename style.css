@@ -5,6 +5,14 @@ body {
     margin: 0;
 }
 
+img {
+    max-width: 400px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -21,6 +29,8 @@ nav {
 li {
     margin: 10px;
 }
+
+/* HEADER STRUCTURE */
 
 header {
     width: auto;
@@ -49,10 +59,4 @@ header > div {
     text-align: center;
 }
 
-img {
-    max-width: 400px;
-}
-
-ul {
-    list-style-type: none;
-}
+/* KNOWLEDGE STRUCTURE */
