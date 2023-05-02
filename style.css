@@ -22,8 +22,35 @@ li {
     margin: 10px;
 }
 
+header {
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    justify-content: center;
+    padding: 300px;
+    padding-top: 200px;
+}
+
+header > div {
+    max-width: 550px;
+    background-color: blueviolet;
+    padding: 50px;
+}
+
+.description-text {
+    margin: 40px 0;
+}
+
+.button-direct {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
 img {
-    width: 300px;
+    max-width: 400px;
 }
 
 ul {
