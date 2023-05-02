@@ -2,8 +2,25 @@ body {
     font-family: 'Mulish', sans-serif;
     background: url("./resourses/fondo\ provisorio.png") center fixed;
     background-size: cover;
+    margin: 0;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #E2E8DE;
+    position: fixed;
+    top: 0;
+}
+
+.nav-bar {
+    display: flex;
+}
+
+li {
+    margin: 10px;
+}
 
 img {
     width: 300px;
