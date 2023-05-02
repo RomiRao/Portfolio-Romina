@@ -1,6 +1,9 @@
 body {
     font-family: 'Mulish', sans-serif;
+    background: url("./resourses/fondo\ provisorio.png") center fixed;
+    background-size: 100%;
 }
+
 
 img {
     width: 300px;
