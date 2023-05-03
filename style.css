@@ -36,16 +36,20 @@ header {
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color: antiquewhite;
+    background-color:  #EAF2E3 ;
     justify-content: center;
-    padding: 300px;
+    padding: 200px;
     padding-top: 200px;
 }
 
 header > div {
     max-width: 550px;
-    background-color: blueviolet;
+    border: 1px solid black;
     padding: 50px;
+}
+
+h3 {
+    font-size: 30px;
 }
 
 .description-text {
@@ -60,3 +64,104 @@ header > div {
 }
 
 /* KNOWLEDGE STRUCTURE */
+
+.knowledge-section {
+    background-color: #B5C9C3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.knowledge-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.language-card {
+    text-align: center;
+    padding: 35px 50px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.language-card > i {
+    font-size: 80px;
+}
+
+/* MOTIVATIONAL STRUCTURE */
+
+.motivational-quote {
+    text-align: center;
+    background-color: #2B061E;
+    padding: 200px;
+}
+
+/* PROJECTS STRUCTURE */
+
+.projects-section {
+    background-color: #B5C9C3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+}
+
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+}
+
+.project-card {
+    text-align: center;
+    padding: 35px 50px;
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 1px solid black;
+    font-size: 20px;
+}
+
+.project-card > img {
+    width: 100px;
+    
+}
+
+/* CONTACT STRUCTURE */
+
+.contact-section {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.contact-card {
+    border: 1px solid black;
+    display: flex;
+    padding: 70px;
+}
+
+/* FOOTER STRUCTURE */
+footer {
+    background-color: lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.contact-bar {
+    display: flex;
+}
+
+.form-contact , .social-media {
+    border: 1px solid black;
+}
