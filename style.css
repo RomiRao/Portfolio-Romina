@@ -1,6 +1,6 @@
 body {
     font-family: 'Mulish', sans-serif;
-    background: url("./resourses/test-background-3.png") center fixed;
+    background-color: white;
     background-size: cover;
     margin: 0;
     color: #6b3c30;
@@ -16,7 +16,7 @@ ul {
 
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     background-color: #f4f1f1;
     box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
@@ -26,10 +26,12 @@ nav {
 
 .nav-bar {
     display: flex;
+    margin-right: 20%;
+
 }
 
 li {
-    margin: 10px;
+    margin: 15px 30px;
 }
 
 /* HEADER STRUCTURE */
