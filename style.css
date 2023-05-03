@@ -1,8 +1,9 @@
 body {
     font-family: 'Mulish', sans-serif;
-    background: url("./resourses/fondo\ provisorio.png") center fixed;
+    background: url("./resourses/test-background-3.png") center fixed;
     background-size: cover;
     margin: 0;
+    color: #6b3c30;
 }
 
 img {
@@ -17,7 +18,8 @@ nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: #E2E8DE;
+    background-color: #f4f1f1;
+    box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
     position: fixed;
     top: 0;
 }
@@ -36,7 +38,7 @@ header {
     width: auto;
     display: flex;
     flex-wrap: wrap;
-    background-color:  #EAF2E3 ;
+    background-color:  rgb(232, 224, 221, 0.7);
     justify-content: center;
     padding: 200px;
     padding-top: 200px;
@@ -66,7 +68,7 @@ h3 {
 /* KNOWLEDGE STRUCTURE */
 
 .knowledge-section {
-    background-color: #B5C9C3;
+    background-color: #eee5e2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +88,9 @@ h3 {
     width: 150px;
     height: 150px;
     margin: 10px;
-    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f4f1f1;
+    box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
 }
 
 .language-card > i {
@@ -97,14 +101,25 @@ h3 {
 
 .motivational-quote {
     text-align: center;
-    background-color: #2B061E;
-    padding: 200px;
+    background-color: #BC8E83;
+    color: #f4f1f1;
+    padding: 100px;
+}
+
+.motivational-quote > i {
+    font-size: 50px;
+    margin: 50px;
+}
+
+#luffy-quote {
+    font-size: 20px;
+    margin-bottom: 100px;
 }
 
 /* PROJECTS STRUCTURE */
 
 .projects-section {
-    background-color: #B5C9C3;
+    background-color: #eee5e2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -124,7 +139,10 @@ h3 {
     width: 150px;
     height: 150px;
     margin: 10px;
-    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f4f1f1;
+    box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
+
     font-size: 20px;
 }
 
@@ -136,21 +154,22 @@ h3 {
 /* CONTACT STRUCTURE */
 
 .contact-section {
-    background-color: white;
+    background-color:  rgb(232, 224, 221, 0.7);
     display: flex;
     justify-content: center;
     padding: 100px;
 }
 
 .contact-card {
-    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #f4f1f1;
     display: flex;
     padding: 70px;
 }
 
 /* FOOTER STRUCTURE */
 footer {
-    background-color: lightgreen;
+    background-color: #BC8E83;
     display: flex;
     flex-direction: column;
     justify-content: center;
