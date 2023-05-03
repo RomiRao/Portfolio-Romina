@@ -93,9 +93,34 @@ h3 {
     box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
 }
 
-.language-card > i {
+.language-card > .fa-brands {
     font-size: 80px;
 }
+
+.fa-html5 {
+    color: #E54D26;
+}
+
+.fa-css3-alt {
+    color: #3D8FC6;
+}
+
+.fa-sass {
+    color: #CC6699;
+}
+
+.fa-square-js {
+    color: #F0DB4F
+}
+
+.fa-react {
+    color: #61DAFB;
+}
+
+.fa-git-alt {
+    color: #F34F29;
+}
+
 
 /* MOTIVATIONAL STRUCTURE */
 
