@@ -1,7 +1,7 @@
 body {
     font-family: 'Mulish', sans-serif;
-    background-color: white;
     background-size: cover;
+    width: auto;
     margin: 0;
     color: #6b3c30;
 }
@@ -37,7 +37,6 @@ li {
 /* HEADER STRUCTURE */
 
 header {
-    width: auto;
     display: flex;
     flex-wrap: wrap;
     background-color:  rgb(232, 224, 221, 0.7);
