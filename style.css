@@ -14,7 +14,7 @@ ul {
     list-style-type: none;
 }
 
-nav {
+header {
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -34,9 +34,14 @@ li {
     margin: 15px 30px;
 }
 
+a {
+    text-decoration: none;
+    color: #6b3c30;
+}
+
 /* HEADER STRUCTURE */
 
-header {
+.presentation {
     display: flex;
     flex-wrap: wrap;
     background-color:  rgb(232, 224, 221, 0.7);
@@ -45,7 +50,7 @@ header {
     padding-top: 200px;
 }
 
-header > div {
+.presentation > div {
     max-width: 550px;
     border: 1px solid black;
     padding: 50px;
