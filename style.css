@@ -1,13 +1,17 @@
-body {
-    font-family: 'Mulish', sans-serif;
-    background-size: cover;
-    width: auto;
+* {
     margin: 0;
-    color: #6b3c30;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ysabeau', sans-serif;
+    margin: 0;
+    color: #523030;
 }
 
 img {
-    max-width: 400px;
+    width: 400px;
 }
 
 ul {
@@ -19,8 +23,8 @@ header {
     justify-content: flex-end;
     width: 100%;
     height: 80px;
-    background-color: #f4f1f1;
-    box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
+    background-color: #ffffff;
+    box-shadow: #c9383024 0px 10px 6px -1px, #c9383043 0px 2px 4px -1px;
     position: fixed;
     top: 0;
 }
@@ -43,11 +47,12 @@ li {
 
 a {
     text-decoration: none;
-    color: #6b3c30;
+    color: inherit;
 }
 
 .button-direct {
-    background-color: #BC8E83;
+    background-color: #C93830;
+    width: fit-content;
     padding: 10px 30px;
     border-radius: 20px;
     color: white;
@@ -61,33 +66,59 @@ a {
 /* PRESENTATION STRUCTURE */
 
 .presentation {
+    background-color:  #fff7f7;
     display: flex;
-    flex-wrap: wrap;
-    background-color:  rgb(232, 224, 221, 0.7);
     justify-content: center;
-    padding: 200px;
-    padding-top: 200px;
+    align-items: center;
+    padding: 200px 0px;
+    width: 100%;
 }
 
-.presentation > div {
-    max-width: 550px;
-    border: 1px solid black;
-    padding: 50px;
+.presentation-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    width: 80%;
+}
+
+.text-presentation {
+    width: 500px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 70px;
+    font-weight: 900;
+    color: #C93830;
 }
 
 h3 {
     font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
 }
 
 .description-text {
-    margin: 40px 0;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.image-presentation {
+    width: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 
 /* KNOWLEDGE STRUCTURE */
 
 .knowledge-section {
-    background-color: #eee5e2;
+    background-color: #ffe3e3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +139,7 @@ h3 {
     height: 150px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #f4f1f1;
+    background-color: white;
     box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
 }
 
@@ -145,7 +176,7 @@ h3 {
 
 .motivational-quote {
     text-align: center;
-    background-color: #BC8E83;
+    background-color: #C93830;
     color: #f4f1f1;
     padding: 100px;
 }
@@ -163,7 +194,7 @@ h3 {
 /* PROJECTS STRUCTURE */
 
 .projects-section {
-    background-color: #eee5e2;
+    background-color: #FFF7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,7 +215,7 @@ h3 {
     height: 150px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #f4f1f1;
+    background-color: white;
     box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
 
     font-size: 20px;
@@ -198,7 +229,7 @@ h3 {
 /* CONTACT STRUCTURE */
 
 .contact-section {
-    background-color:  rgb(232, 224, 221, 0.7);
+    background-color:  #ffe3e3;
     display: flex;
     justify-content: center;
     padding: 100px;
@@ -206,14 +237,15 @@ h3 {
 
 .contact-card {
     border-radius: 15px;
-    background-color: #f4f1f1;
+    background-color: white;
     display: flex;
     padding: 70px;
 }
 
 /* FOOTER STRUCTURE */
 footer {
-    background-color: #BC8E83;
+    background-color: #C93830;
+    color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -245,5 +277,49 @@ footer {
     .fa-bars {
         display: block;
         font-size: 2em;
+    }
+}
+
+/* Presentation */
+
+@media (max-width: 1100px) {
+
+    .presentation {
+        width: 100%;
+    }
+    
+    .presentation-container {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .button-projects {
+        display: flex;
+        justify-content: center;
+    }
+
+    .image-presentation {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    .text-presentation {
+        margin-bottom: 30px;
+        width: 80%;
+    }
+
+    .image-presentation {
+        width: 100%;
+    }
+
+    img {
+        width: 90%;
     }
 }
