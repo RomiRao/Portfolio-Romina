@@ -1,3 +1,10 @@
+/* ----- PALETA DE COLORES FINAL ----- */
+
+/* Modo CLARO */
+
+/* Modo OSCURO */
+
+
 * {
     margin: 0;
     padding: 0;
@@ -16,6 +23,9 @@ img {
 ul {
     list-style-type: none;
 }
+
+
+/* ---------------------------------------- HEADER STRUCTURE --------------------------------- */
 
 header {
     display: flex;
@@ -62,7 +72,8 @@ a {
     display: none;
 }
 
-/* PRESENTATION STRUCTURE */
+
+/* --------------------------------- PRESENTATION STRUCTURE ------------------------- */
 
 .presentation {
     background-color:  #FFF7F7;
@@ -96,7 +107,7 @@ h1 {
 
 h3 {
     font-size: 30px;
-    font-weight: 800;
+    font-weight: 900;
     margin-bottom: 0;
 }
 
@@ -116,36 +127,57 @@ p {
 }
 
 
-/* KNOWLEDGE STRUCTURE */
+/* ----------------------------------- KNOWLEDGE STRUCTURE --------------------------- */
 
 .knowledge-section {
-    background-color: #ffe3e3;
+    background-color: #f7e7e7;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 130px 0;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 900;
+    
+}
+
+.section-description {
+    text-align: center;
+    font-size: 20px;
+    margin: 50px 0;
 }
 
 .knowledge-cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 900px;
+    width: 900px;
 }
 
 .language-card {
-    text-align: center;
-    padding: 35px 50px;
-    width: 150px;
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 265px;
+    height: 225px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     background-color: white;
-    box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
+    border: 1px solid #f8cfcc ;
 }
 
-.language-card > .fa-brands {
-    font-size: 80px;
+h4 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 10px
+}
+
+.fa-brands {
+    font-size: 90px;
 }
 
 .fa-html5 {
@@ -173,7 +205,9 @@ p {
 }
 
 
-/* MOTIVATIONAL STRUCTURE */
+
+
+/* --------------------------- MOTIVATIONAL STRUCTURE ---------------------- */
 
 .motivational-quote {
     text-align: center;
@@ -192,7 +226,8 @@ p {
     margin-bottom: 100px;
 }
 
-/* PROJECTS STRUCTURE */
+
+/* ------------------------------- PROJECTS STRUCTURE ------------------------ */
 
 .projects-section {
     background-color: #FFF7F7;
@@ -224,10 +259,10 @@ p {
 
 .project-card > img {
     width: 100px;
-    
 }
 
-/* CONTACT STRUCTURE */
+
+/* ------------------------------- CONTACT STRUCTURE -------------------------- */
 
 .contact-section {
     background-color:  #ffe3e3;
@@ -244,7 +279,9 @@ p {
     padding: 70px;
 }
 
-/* FOOTER STRUCTURE */
+
+/* -------------------------------- FOOTER STRUCTURE ---------------------------- */
+
 footer {
     background-color: #C93830;
     color: white;
@@ -264,27 +301,12 @@ footer {
 }
 
 
-/* MEDIA RESPONSIVE */
 
-/* Header */
 
-@media (max-width: 830px) {
+/* ---------------------- MEDIA RESPONSIVE -------------------- */
 
-    .nav-top {
-        display: none;
-    }
 
-    .nav-container {
-        margin-right: 10%;
-    }
-
-    .fa-bars {
-        display: block;
-        font-size: 2em;
-    }
-}
-
-/* Presentation */
+/* --- 1100px --- */
 
 @media (max-width: 1100px) {
 
@@ -306,7 +328,67 @@ footer {
     .image-presentation {
         margin-top: 40px;
     }
+
+    .contact-card {
+        flex-direction: column;
+    }
 }
+
+/* --- 920px --- */
+
+@media (max-width: 920px) {
+
+    .knowledge-cards {
+        width: 100%;
+    }
+}
+
+/* --- 830px --- */
+
+@media (max-width: 830px) {
+
+    .nav-top {
+        display: none;
+    }
+
+    .nav-container {
+        margin-right: 10%;
+    }
+
+    .fa-bars {
+        display: block;
+        font-size: 2em;
+    }
+}
+
+/* ---580px --- */
+
+@media (max-width: 580px) {
+
+    .knowledge-cards {
+        padding: 10px;
+    }
+
+    .language-card {
+        width: 45%;
+    }
+
+    .fa-brands {
+        font-size: 4em;
+    }
+
+    .language-card {
+        height: 180px;
+        margin: 8px;
+    }
+
+    h4 {
+        font-size: 18px;
+    }
+    
+} 
+
+/* --- 550px --- */
 
 @media (max-width: 550px) {
 
@@ -326,17 +408,20 @@ footer {
     img {
         width: 80%;
     }
-}
 
-/* Contact */
-
-@media (max-width: 1100px) {
-
-    .contact-card {
+    h2 {
+        font-size: 55px;
+    }
+    
+    .nav-bot {
+        display: flex;
         flex-direction: column;
     }
-
 }
+
+
+
+/* --- 450px --- */
 
 @media (max-width: 450px) {
 
@@ -344,19 +429,19 @@ footer {
         padding: 10%;
     }
 
+    .fa-brands {
+        font-size: 3.3em;
+    }
 
-}
-
-/* Footer */
-
-@media (max-width: 550px) {
-
-    .nav-bot {
-        display: flex;
-        flex-direction: column;
+    .language-card {
+        height: 150px;
+        margin: 5px;
     }
 
 }
+
+
+/* --- 345px --- */
 
 @media (max-width: 345px) {
 
@@ -364,4 +449,9 @@ footer {
         justify-content: space-around;
         width: 100%;
     }
+
+    .language-card {
+        width: 60%;
+    }
+
 }
