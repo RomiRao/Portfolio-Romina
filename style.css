@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Ysabeau', sans-serif;
-    margin: 0;
     color: #523030;
 }
 
@@ -66,17 +65,19 @@ a {
 /* PRESENTATION STRUCTURE */
 
 .presentation {
-    background-color:  #fff7f7;
+    background-color:  #FFF7F7;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 200px 0px;
     width: 100%;
+    
+    
 }
 
 .presentation-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     margin: 0;
     width: 80%;
@@ -233,6 +234,7 @@ p {
     display: flex;
     justify-content: center;
     padding: 100px;
+    width: 100%;
 }
 
 .contact-card {
@@ -263,6 +265,8 @@ footer {
 
 
 /* MEDIA RESPONSIVE */
+
+/* Header */
 
 @media (max-width: 830px) {
 
@@ -316,10 +320,48 @@ footer {
     }
 
     .image-presentation {
-        width: 100%;
+        width: 85%;
     }
 
     img {
-        width: 90%;
+        width: 80%;
+    }
+}
+
+/* Contact */
+
+@media (max-width: 1100px) {
+
+    .contact-card {
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .contact-card {
+        padding: 10%;
+    }
+
+
+}
+
+/* Footer */
+
+@media (max-width: 550px) {
+
+    .nav-bot {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 345px) {
+
+    .contact-bar {
+        justify-content: space-around;
+        width: 100%;
     }
 }
