@@ -234,30 +234,34 @@ h4 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px;
+    padding: 100px 0;
 }
 
 .projects-cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    max-width: 900px;
+    width: 90%;
 }
 
-.project-card {
+figure {
     text-align: center;
-    padding: 35px 50px;
-    width: 150px;
-    height: 150px;
-    margin: 10px;
+    padding: 17px;
+    width: 350px;
+    margin: 1%;
     border-radius: 10px;
     background-color: white;
-    box-shadow: rgba(139, 64, 64, 0.121) 0px 4px 6px -1px, rgba(126, 91, 91, 0.132) 0px 2px 4px -1px;
-
+    border: 1px solid #f8cfcc ;
     font-size: 20px;
 }
 
-.project-card > img {
-    width: 100px;
+figure > img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    margin: 10px;
 }
 
 
@@ -305,6 +309,17 @@ footer {
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
 
 
+@media (max-width: 1245px) {
+
+    figure {
+        width: 30%;
+    }
+
+    .projects-cards {
+        width: 100%;
+    }
+}
+
 /* --- 1100px --- */
 
 @media (max-width: 1100px) {
@@ -330,6 +345,15 @@ footer {
 
     .contact-card {
         flex-direction: column;
+    }
+}
+
+/* --- 900px --- */
+
+@media (max-width: 920px) {
+
+    figure {
+        width: 40%;
     }
 }
 
@@ -415,6 +439,10 @@ footer {
     .nav-bot {
         display: flex;
         flex-direction: column;
+    }
+
+    figure {
+        width: 90%;
     }
 }
 
