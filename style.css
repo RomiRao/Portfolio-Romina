@@ -176,7 +176,7 @@ h4 {
     margin-top: 10px
 }
 
-.fa-brands {
+article >.fa-brands {
     font-size: 90px;
 }
 
@@ -268,7 +268,7 @@ figcaption {
 /* ------------------------------- CONTACT STRUCTURE -------------------------- */
 
 .contact-section {
-    background-color:  #ffe3e3;
+    background-color:  #F7E7E7;
     display: flex;
     justify-content: center;
     padding: 100px;
@@ -278,10 +278,67 @@ figcaption {
 .contact-card {
     border-radius: 15px;
     background-color: white;
+    width: 85%;
     display: flex;
     padding: 70px;
 }
 
+.contact-card > div {
+    width: 50%;
+    padding: 10px;
+}
+
+.contact-description {
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+li {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+li > i {
+    font-size: 20px;
+    padding: 7px;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.fa-instagram, .fa-linkedin {
+    padding: 7px 8px ;
+}
+
+form > div {
+    display: flex;
+    width: 100%;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input {
+    height: 40px;
+    width: 100%;
+}
+
+input, textarea {
+    border-radius: 20px;
+    border: none;
+    background-color: #F7E7E7;
+}
+
+.nameLastname {
+    width: 50%;
+}
+
+.nam1 {
+    margin-right: 20px;
+}
 
 /* -------------------------------- FOOTER STRUCTURE ---------------------------- */
 
@@ -298,12 +355,6 @@ footer {
 .contact-bar {
     display: flex;
 }
-
-.form-contact , .social-media {
-    border: 1px solid black;
-}
-
-
 
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
