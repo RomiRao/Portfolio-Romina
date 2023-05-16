@@ -308,8 +308,8 @@ figcaption {
 
 
 a > i, li > i {
-    font-size: 20px;
-    padding: 7px;
+    font-size: 23px;
+    padding: 10px;
     border-radius: 50%;
     background-color: white;
     color: #C93830;
@@ -317,7 +317,7 @@ a > i, li > i {
 }
 
 .fa-instagram, .fa-linkedin {
-    padding: 7px 8px ;
+    padding: 10px 11px ;
 }
 
 form > div, form {
@@ -391,14 +391,18 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 70px 40px;
 }
 
 .contact-bar {
     display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }
 
-
+.contact-bar > li {
+    margin: 0 5px;
+}
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
 
 
@@ -534,7 +538,7 @@ footer {
         width: 45%;
     }
 
-    .fa-brands:not(a > i) {
+    .fa-brands:not(a > i):not(li > i) {
         font-size: 4em;
     }
 
@@ -576,11 +580,16 @@ footer {
     
     .nav-bot {
         display: flex;
-        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     figure {
         width: 90%;
+    }
+
+    .contact-bar {
+
     }
 }
 
@@ -610,11 +619,7 @@ footer {
 
 @media (max-width: 450px) {
 
-    .contact-card {
-        padding: 10%;
-    }
-
-    .fa-brands {
+    .fa-brands:not(a > i):not(li > i) {
         font-size: 3.3em;
     }
 
