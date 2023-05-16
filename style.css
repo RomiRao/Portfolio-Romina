@@ -234,9 +234,9 @@ article >.fa-brands {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     padding: 100px 0;
 }
+
 
 .projects-cards {
     display: flex;
@@ -245,10 +245,11 @@ article >.fa-brands {
     width: 90%;
 }
 
-figure {
+
+.projects-cards > a {
     text-align: center;
     padding: 17px;
-    width: 350px;
+    width: 330px;
     margin: 1%;
     border-radius: 10px;
     background-color: white;
@@ -256,7 +257,12 @@ figure {
     font-size: 20px;
 }
 
-figure > img {
+.last-card {
+    position: relative;
+    left: 0;
+}
+
+a > img {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -264,6 +270,7 @@ figure > img {
 figcaption {
     margin: 10px;
 }
+
 
 
 /* ------------------------------- CONTACT STRUCTURE -------------------------- */
@@ -312,12 +319,13 @@ a > i, li > i {
     padding: 10px;
     border-radius: 50%;
     background-color: white;
+    border: 1px solid white;
     color: #C93830;
     margin-right: 7px;
 }
 
 .fa-instagram, .fa-linkedin {
-    padding: 10px 11px ;
+    padding: 10px 12px ;
 }
 
 form > div, form {
@@ -371,18 +379,15 @@ textarea {
     height: 150px;
 }
 
-button {
+.button-send {
     width: 120px;
-    background-color: #C93830;
-    color: white;
-    border-radius: 30px;
 }
 
 input, label {
     font-size: 18px;
 }
 
-/* -------------------------------- FOOTER STRUCTURE ---------------------------- */
+/* --------------------------------------- FOOTER STRUCTURE --------------------------------- */
 
 footer {
     background-color: #C93830;
@@ -403,14 +408,33 @@ footer {
 .contact-bar > li {
     margin: 0 5px;
 }
+
+/* ---------------------------------------- USER INTERACTION ---------------------------------- */
+
+
+.button-direct:hover {
+    background-color: #ea645d;
+}
+
+.nav-top > a:not(.button-direct):hover {
+    color: #C93830;
+}
+
+.language-card:hover, .project-card:hover {
+    border-color: #C93830;
+    color: #C93830;
+}
+
+a > i:hover{
+    color: white;
+    background-color: #C93830 ;
+}
+
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
 
 
 @media (max-width: 1245px) {
 
-    figure {
-        width: 30%;
-    }
 
     .projects-cards {
         width: 100%;
@@ -440,13 +464,17 @@ footer {
         margin-top: 40px;
     }
 
+    .projects-cards > a {
+        width: 30%;
+    }
+
 }
 
 /* --- 900px --- */
 
 @media (max-width: 900px) {
 
-    figure {
+    .projects-cards > a {
         width: 40%;
     }
 
@@ -584,13 +612,10 @@ footer {
         flex-wrap: wrap;
     }
 
-    figure {
+    .projects-cards > a {
         width: 90%;
     }
 
-    .contact-bar {
-
-    }
 }
 
 /* --- 500px --- */
