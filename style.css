@@ -34,7 +34,8 @@ header {
     height: 80px;
     background-color: #ffffff;
     box-shadow: #c9383024 0px 10px 6px -1px, #c9383043 0px 2px 4px -1px;
-    position: fixed;
+    position: sticky;
+    z-index: 5;
     top: 0;
 }
 
@@ -80,7 +81,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 200px 0px;
+    padding: 150px 0px;
     width: 100%;
     
     
@@ -271,19 +272,20 @@ figcaption {
     background-color:  #F7E7E7;
     display: flex;
     justify-content: center;
-    padding: 100px;
+    padding: 100px 30px;
     width: 100%;
 }
 
 .contact-card {
     border-radius: 15px;
     background-color: white;
-    width: 85%;
+    width: 1100px;
     display: flex;
-    padding: 70px;
+    padding: 60px;
+    border: 1px solid #f8cfcc ;
 }
 
-.contact-card > div {
+.social-media, .form-contact {
     width: 50%;
     padding: 10px;
 }
@@ -291,17 +293,26 @@ figcaption {
 .contact-description {
     font-size: 20px;
     margin: 40px 0;
+    padding: 10px;
 }
 
-li {
+.contact-bar-column > li {
+    font-size: 20px;
+    margin: 20px 10px;
+}
+
+.li-font > li {
     font-size: 20px;
     margin: 20px 0;
 }
 
-li > i {
+
+a > i, li > i {
     font-size: 20px;
     padding: 7px;
     border-radius: 50%;
+    background-color: white;
+    color: #C93830;
     margin-right: 7px;
 }
 
@@ -309,16 +320,14 @@ li > i {
     padding: 7px 8px ;
 }
 
-form > div {
+form > div, form {
     display: flex;
     width: 100%;
 
 }
 
 form {
-    display: flex;
     flex-direction: column;
-    width: 100%;
 }
 
 input {
@@ -326,10 +335,26 @@ input {
     width: 100%;
 }
 
-input, textarea {
+input, textarea, button {
     border-radius: 20px;
+    font-size: 17px;
     border: none;
-    background-color: #F7E7E7;
+    background-color: #f9eded;
+    padding: 15px 20px;
+    margin: 10px 0;
+}
+
+::placeholder {
+    font-size: 15px;
+    color: rgb(179, 131, 131);
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 700;
 }
 
 .nameLastname {
@@ -338,6 +363,23 @@ input, textarea {
 
 .nam1 {
     margin-right: 20px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 150px;
+}
+
+button {
+    width: 120px;
+    background-color: #C93830;
+    color: white;
+    border-radius: 30px;
+}
+
+input, label {
+    font-size: 18px;
 }
 
 /* -------------------------------- FOOTER STRUCTURE ---------------------------- */
@@ -394,17 +436,50 @@ footer {
         margin-top: 40px;
     }
 
-    .contact-card {
-        flex-direction: column;
-    }
 }
 
 /* --- 900px --- */
 
-@media (max-width: 920px) {
+@media (max-width: 900px) {
 
     figure {
         width: 40%;
+    }
+
+    .contact-section {
+        padding: 0;
+    }
+    
+    .contact-card {
+        border-radius: 0px;
+        border: none;
+        flex-direction: column;
+        padding: 150px 30px;
+    }
+
+    .contact-card > div {
+        width: 100%;
+    }
+
+    .contact-description {
+        width: 50%;
+        margin: 10px 0;
+    }
+
+    .contact-bar-column {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 7px;
+        justify-content: space-between;
+    }
+
+    .contact-bar-column > li {
+        width: 45%;
+        padding: 0;
+    }
+
+    .social-media {
+        margin-bottom: 50px;
     }
 }
 
@@ -435,6 +510,18 @@ footer {
     }
 }
 
+@media (max-width: 610px){
+    
+    .contact-bar-column {
+        flex-direction: column;
+    }
+    
+    .contact-bar-column > li {
+        width: 100%;
+    } 
+}
+
+
 /* ---580px --- */
 
 @media (max-width: 580px) {
@@ -447,7 +534,7 @@ footer {
         width: 45%;
     }
 
-    .fa-brands {
+    .fa-brands:not(a > i) {
         font-size: 4em;
     }
 
@@ -502,6 +589,19 @@ footer {
 @media (max-width: 500px) {
     #luffy-quote {
         font-size: 20px;
+    }
+
+    form > div {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nameLastname {
+        width: 100%;
+    }
+
+    .contact-card {
+        padding: 70px 10px;
     }
 } 
 
