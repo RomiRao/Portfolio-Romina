@@ -1,8 +1,5 @@
 /* ----- PALETA DE COLORES FINAL ----- */
 
-/* Modo CLARO */
-
-/* Modo OSCURO */
 
 
 * {
@@ -52,12 +49,21 @@ header {
 }
 
 li {
-    margin: 15px 30px;
+    margin: 15px 20px;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.nav-bar > li > a , .contact-bar-column > li > a {
+    padding: 10px 15px;
+    border-radius: 35px;
+}
+
+.contact-bar-column > li > a {
+    padding-left: 4px;
 }
 
 .button-direct {
@@ -67,6 +73,7 @@ a {
     border-radius: 20px;
     color: white;
     text-align: center;
+    transition: background-color 0.3s;
 }
 
 .fa-bars {
@@ -169,6 +176,8 @@ h2 {
     border-radius: 8px;
     background-color: white;
     border: 1px solid #f8cfcc ;
+    transition: border-color 0.2s;
+
 }
 
 h4 {
@@ -314,7 +323,7 @@ figcaption {
 }
 
 
-a > i, li > i {
+a > i {
     font-size: 23px;
     padding: 10px;
     border-radius: 50%;
@@ -322,6 +331,7 @@ a > i, li > i {
     border: 1px solid white;
     color: #C93830;
     margin-right: 7px;
+    transition: background-color 0.2s;
 }
 
 .fa-instagram, .fa-linkedin {
@@ -387,6 +397,7 @@ input, label {
     font-size: 18px;
 }
 
+
 /* --------------------------------------- FOOTER STRUCTURE --------------------------------- */
 
 footer {
@@ -411,12 +422,14 @@ footer {
 
 /* ---------------------------------------- USER INTERACTION ---------------------------------- */
 
+/* HOVER */
 
 .button-direct:hover {
     background-color: #ea645d;
+
 }
 
-.nav-top > a:not(.button-direct):hover {
+.nav-top > li:not(.button-direct):hover a:not(.button-direct) {
     color: #C93830;
 }
 
@@ -425,9 +438,28 @@ footer {
     color: #C93830;
 }
 
-a > i:hover{
+.contact-bar-column > li:hover i, a > i:hover{
     color: white;
     background-color: #C93830 ;
+}
+
+.contact-bar-column > li:hover a {
+    color: #C93830;
+}
+
+/* FOCUS */
+
+a:focus, input:focus, textarea:focus, .button-direct:focus {
+    box-shadow: -1px 0px 8px 1px #c938309f;
+    outline: none; 
+}
+
+.nav-bot > li > a:focus {
+    box-shadow: -1px 0px 7px 1px white
+}
+
+.fa-focus:focus {
+    background-color: #3D8FC6;
 }
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
