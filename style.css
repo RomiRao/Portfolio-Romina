@@ -1,4 +1,19 @@
-/* ----- PALETA DE COLORES FINAL ----- */
+/* ----- PALETA DE COLORES FINAL ----- 
+
+#ED6877
+#7D3B54
+#A67A49
+#03B9F3
+#42403C
+#325BBC
+#F8F8F8
+
+
+transition:
+    background-color, 0.5s,
+    color, 0.5s;
+
+*/
 
 
 
@@ -9,8 +24,8 @@
 }
 
 body {
-    font-family: 'Ysabeau', sans-serif;
-    color: #523030;
+    font-family: 'Raleway', sans-serif;
+    color: #42403C;
 }
 
 img {
@@ -21,7 +36,23 @@ ul {
     list-style-type: none;
 }
 
+/* color set */
 
+.button-direct, .motivational-quote, footer {
+    background-color: #7D3B54;
+}
+
+.knowledge-section, .contact-section {
+    background-color: #fff4f5;
+}
+
+h2 {
+    color: #7D3B54;
+}
+
+header, .presentation, .projects-section {
+    background-color: white;
+}
 /* ---------------------------------------- HEADER STRUCTURE --------------------------------- */
 
 header {
@@ -29,8 +60,7 @@ header {
     justify-content: flex-end;
     width: 100%;
     height: 80px;
-    background-color: #ffffff;
-    box-shadow: #c9383024 0px 10px 6px -1px, #c9383043 0px 2px 4px -1px;
+    box-shadow: #bd2f6535 0px 10px 6px -1px, #b1326325 0px 2px 4px -1px;
     position: sticky;
     z-index: 5;
     top: 0;
@@ -57,8 +87,8 @@ a {
     color: inherit;
 }
 
-.nav-bar > li > a , .contact-bar-column > li > a {
-    padding: 10px 15px;
+.nav-bar  li  a , .contact-bar-column  li  a {
+    padding: 15px 15px;
     border-radius: 35px;
 }
 
@@ -67,7 +97,6 @@ a {
 }
 
 .button-direct {
-    background-color: #C93830;
     width: fit-content;
     padding: 10px 30px;
     border-radius: 20px;
@@ -84,14 +113,11 @@ a {
 /* --------------------------------- PRESENTATION STRUCTURE ------------------------- */
 
 .presentation {
-    background-color:  #FFF7F7;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 150px 0px;
-    width: 100%;
-    
-    
+    padding: 100px 0px 150px;
+    width: 100%; 
 }
 
 .presentation-container {
@@ -110,7 +136,7 @@ h1 {
     margin: 0;
     font-size: 70px;
     font-weight: 900;
-    color: #C93830;
+    color: #ED6877;
 }
 
 h3 {
@@ -138,7 +164,6 @@ p {
 /* ----------------------------------- KNOWLEDGE STRUCTURE --------------------------- */
 
 .knowledge-section {
-    background-color: #f7e7e7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -221,7 +246,6 @@ article >.fa-brands {
 
 .motivational-quote {
     text-align: center;
-    background-color: #C93830;
     color: #f4f1f1;
     padding: 100px 0;
 }
@@ -239,7 +263,6 @@ article >.fa-brands {
 /* ------------------------------- PROJECTS STRUCTURE ------------------------ */
 
 .projects-section {
-    background-color: #FFF7F7;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -285,7 +308,6 @@ figcaption {
 /* ------------------------------- CONTACT STRUCTURE -------------------------- */
 
 .contact-section {
-    background-color:  #F7E7E7;
     display: flex;
     justify-content: center;
     padding: 100px 30px;
@@ -312,24 +334,18 @@ figcaption {
     padding: 10px;
 }
 
-.contact-bar-column > li {
-    font-size: 20px;
+.contact-bar-column li {
+    font-size: 17px;
     margin: 20px 10px;
 }
 
-.li-font > li {
-    font-size: 20px;
-    margin: 20px 0;
-}
-
-
-a > i {
+a i {
     font-size: 23px;
     padding: 10px;
     border-radius: 50%;
     background-color: white;
     border: 1px solid white;
-    color: #C93830;
+    color: #7D3B54;
     margin-right: 7px;
     transition: background-color 0.2s;
 }
@@ -338,7 +354,7 @@ a > i {
     padding: 10px 12px ;
 }
 
-form > div, form {
+form div, form {
     display: flex;
     width: 100%;
 
@@ -357,14 +373,14 @@ input, textarea, button {
     border-radius: 20px;
     font-size: 17px;
     border: none;
-    background-color: #f9eded;
+    background-color: #f5a9b257;
     padding: 15px 20px;
     margin: 10px 0;
 }
 
 ::placeholder {
     font-size: 15px;
-    color: rgb(179, 131, 131);
+    color: #f47180;
 }
 
 h2 {
@@ -401,7 +417,6 @@ input, label {
 /* --------------------------------------- FOOTER STRUCTURE --------------------------------- */
 
 footer {
-    background-color: #C93830;
     color: white;
     display: flex;
     flex-direction: column;
@@ -425,32 +440,31 @@ footer {
 /* HOVER */
 
 .button-direct:hover {
-    background-color: #ea645d;
+    background-color: #ED6877;
 
 }
 
-.nav-top > li:not(.button-direct):hover a:not(.button-direct) {
-    color: #C93830;
+.contact-bar-column li:hover a, .language-card:hover, .project-card:hover, .nav-bar li:not(.button-direct):hover {
+    color: #ED6877;
 }
 
 .language-card:hover, .project-card:hover {
-    border-color: #C93830;
-    color: #C93830;
+    border-color: #ED6877;
 }
 
-.contact-bar-column > li:hover i, a > i:hover{
+li:hover i{
     color: white;
-    background-color: #C93830 ;
+    background-color: #7D3B54 ;
 }
 
-.contact-bar-column > li:hover a {
-    color: #C93830;
+.contact-bar-column li:hover i {
+    background-color: #ED6877;
 }
 
 /* FOCUS */
 
 a:focus, input:focus, textarea:focus, .button-direct:focus {
-    box-shadow: -1px 0px 8px 1px #c938309f;
+    box-shadow: -1px 0px 8px 1px #ED6877;
     outline: none; 
 }
 
