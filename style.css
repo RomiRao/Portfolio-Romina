@@ -7,15 +7,7 @@
 #42403C
 #325BBC
 #F8F8F8
-
-
-transition:
-    background-color, 0.5s,
-    color, 0.5s;
-
 */
-
-
 
 * {
     margin: 0;
@@ -34,6 +26,10 @@ img {
 
 ul {
     list-style-type: none;
+}
+
+.flex-container {
+    display: flex;
 }
 
 /* color set */
@@ -55,8 +51,7 @@ header, .presentation, .projects-section {
 }
 /* ---------------------------------------- HEADER STRUCTURE --------------------------------- */
 
-header {
-    display: flex;
+.header-container {
     justify-content: flex-end;
     width: 100%;
     height: 80px;
@@ -67,13 +62,11 @@ header {
 }
 
 .nav-container {
-    display: flex;
     align-items: center;
     margin-right: 15%;
 }
 
 .nav-bar {
-    display: flex;
     justify-content: flex-end;
 
 }
@@ -112,8 +105,7 @@ a {
 
 /* --------------------------------- PRESENTATION STRUCTURE ------------------------- */
 
-.presentation {
-    display: flex;
+.presentation-section {
     justify-content: center;
     align-items: center;
     padding: 100px 0px 150px;
@@ -121,7 +113,6 @@ a {
 }
 
 .presentation-container {
-    display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin: 0;
@@ -156,7 +147,6 @@ p {
 
 .image-presentation {
     width: 400px;
-    display: flex;
     justify-content: center;
 }
 
@@ -164,7 +154,6 @@ p {
 /* ----------------------------------- KNOWLEDGE STRUCTURE --------------------------- */
 
 .knowledge-section {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -184,14 +173,12 @@ h2 {
 }
 
 .knowledge-cards {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 900px;
 }
 
 .language-card {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -211,7 +198,7 @@ h4 {
     margin-top: 10px
 }
 
-article >.fa-brands {
+article .fa-brands {
     font-size: 90px;
 }
 
@@ -263,7 +250,6 @@ article >.fa-brands {
 /* ------------------------------- PROJECTS STRUCTURE ------------------------ */
 
 .projects-section {
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0;
@@ -271,14 +257,13 @@ article >.fa-brands {
 
 
 .projects-cards {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: 90%;
 }
 
 
-.projects-cards > a {
+.projects-cards a {
     text-align: center;
     padding: 17px;
     width: 330px;
@@ -289,12 +274,7 @@ article >.fa-brands {
     font-size: 20px;
 }
 
-.last-card {
-    position: relative;
-    left: 0;
-}
-
-a > img {
+a img {
     width: 100%;
     margin-bottom: 10px;
 }
@@ -308,7 +288,6 @@ figcaption {
 /* ------------------------------- CONTACT STRUCTURE -------------------------- */
 
 .contact-section {
-    display: flex;
     justify-content: center;
     padding: 100px 30px;
     width: 100%;
@@ -318,7 +297,6 @@ figcaption {
     border-radius: 15px;
     background-color: white;
     width: 1100px;
-    display: flex;
     padding: 60px;
     border: 1px solid #f8cfcc ;
 }
@@ -355,7 +333,6 @@ a i {
 }
 
 form div, form {
-    display: flex;
     width: 100%;
 
 }
@@ -418,7 +395,6 @@ input, label {
 
 footer {
     color: white;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -426,12 +402,11 @@ footer {
 }
 
 .contact-bar {
-    display: flex;
     justify-content: center;
     margin: 20px 0;
 }
 
-.contact-bar > li {
+.contact-bar li {
     margin: 0 5px;
 }
 
@@ -463,17 +438,13 @@ li:hover i{
 
 /* FOCUS */
 
-a:focus, input:focus, textarea:focus, .button-direct:focus {
+.is-focus:focus {
     box-shadow: -1px 0px 8px 1px #ED6877;
     outline: none; 
 }
 
-.nav-bot > li > a:focus {
+.nav-bot li a:focus {
     box-shadow: -1px 0px 7px 1px white
-}
-
-.fa-focus:focus {
-    background-color: #3D8FC6;
 }
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
