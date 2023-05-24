@@ -18,7 +18,7 @@
 <body>
     <header class="header-container flex-container">
         <nav class="nav-container flex-container">
-            <ul class="nav-bar flex-container">
+            <ul class="nav-bar flex-container nav-top">
                 <li>
                     <a href="#hello" class="is-focus">HI</a>
                 </li>
@@ -32,11 +32,11 @@
                     <a href="#contact" class="button-direct is-focus">CONTACT</a>
                 </li>
             </ul>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid bar-menu fa-bars"></i>
         </nav>
     </header>
     <a name="hello"></a>
-    <section class="presentation-section flex-container">
+    <section class="section-container presentation-section flex-container">
         <article class="presentation-container flex-container">
             <div class="text-presentation">
                 <h3>
@@ -60,7 +60,7 @@
         </article>
     </section>
     <a name="knowledge"></a>
-    <section class="knowledge-section flex-container">
+    <section class="section-container knowledge-section flex-container column-container">
         <h2>
             Knowledge
         </h2>
@@ -68,27 +68,27 @@
             As a developer I have skills to use the following languages.
         </p>
         <div class="knowledge-cards flex-container">
-            <article class="language-card flex-container">
+            <article class="language-card">
                 <i class="fa-brands fa-html5"></i>
                 <h4>HTML 5</h4>
             </article>
-            <article class="language-card flex-container">
+            <article class="language-card">
                 <i class="fa-brands fa-css3-alt"></i>
                 <h4>CSS 3</h4>
             </article>
-            <article class="language-card flex-container">
+            <article class="language-card">
                 <i class="fa-brands fa-sass"></i>
                 <h4>Sass</h4>
             </article>
-            <article class="language-card flex-container">
+            <article class="language-card">
                 <i class="fa-brands fa-square-js"></i>
                 <h4>JavaScript</h4>
             </article>
-            <article class="language-card flex-container">
+            <article class="language-card">
                 <i class="fa-brands fa-react"></i>
                 <h4>React</h4>
             </article>
-            <article class="language-card flex-container">
+            <article class="language-card">
                 <i class="fa-brands fa-git-alt"></i>
                 <h4>GIT</h4>
             </article>
@@ -104,12 +104,12 @@
         </h3>
     </article>
     <a name="projects"></a>
-    <section class="projects-section flex-container">
+    <section class="section-container projects-section flex-container column-container">
         <h2>
             Projects
         </h2>
         <p class="section-description">
-            Here are some examples of what I have been working on.
+            Here are some examples of what I have been working on. <br>All the ilustrations used on this web were made by myself.
         </p>
         <div class="projects-cards flex-container">
             <a href="" target="_blank" class="project-card is-focus">
@@ -137,7 +137,7 @@
                 </figcaption>
             </a>
             <a href="" target="_blank" class="project-card is-focus">
-                <img src="./resourses/adfasdfasdadsf.jpg" alt="imagen provisoria">
+                <img src="./resourses/img-projects/meetings.png" alt="imagen provisoria">
                 <figcaption>
                     Meetings
                 </figcaption>
@@ -157,7 +157,7 @@
         </div>
     </section>
     <a name="contact"></a>
-    <section class="contact-section flex-container">
+    <section class="section-container contact-section flex-container">
         <section class="contact-card flex-container">
             <div class="social-media">
                 <h2>
@@ -169,25 +169,25 @@
                 <ul class="contact-bar-column">
                     <li>
                         <a href="https://github.com/RomiRao" class="is-focus">
-                            <i class="fa-brands fa-github"></i>
+                            <i class="fa-brands icon fa-github"></i>
                             RomiRao
                         </a>
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/romina-yazmín-rao-50a61a1ba/" class="is-focus">
-                            <i class="fa-brands fa-linkedin"></i>
+                            <i class="fa-brands icon fa-linkedin"></i>
                             Romina Yazmin Rao
                         </a>
                     </li>
                     <li>
                         <a href="mailto:rominarao96@gmail.com" class="is-focus">
-                            <i class="fa-solid fa-paper-plane"></i>
+                            <i class="fa-solid icon fa-paper-plane"></i>
                             rominarao96@gmail.com
                         </a>
                     </li>
                     <li>
                         <a href="https://www.instagram.com/renga.art/?hl=es" class="is-focus">
-                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands icon fa-instagram"></i>
                             renga.art
                         </a>
                     </li>
@@ -197,13 +197,13 @@
                 <h2>
                     Contact me
                 </h2>
-                <form class="flex-container">
+                <form >
                     <div class="flex-container">
-                        <label class="nameLastname nam1">
+                        <label class="name">
                             <p>Name *</p>
                             <input type="text" name="name" id="idname" placeholder="Ada" class="is-focus" required>
                         </label>
-                        <label class="nameLastname">
+                        <label class="lastname">
                             <p>Last name *</p>
                             <input type="text" name="lastname" id="idlastname" class="is-focus" placeholder="Lovelace" required>
                         </label>
@@ -212,13 +212,13 @@
                     <input type="email" name="email" id="idemail" placeholder="example@gmail.com" class="is-focus" required>
                     <label for="idmessage">Message *</label>
                     <textarea name="message" name="message" id="idmessage" cols="30" rows="10" placeholder="Type your message" class="is-focus" required></textarea>
-                    <button type="submit" name="button" class="button-direct is-focus button-send">Send</button>
+                    <button type="submit" name="button" class="button-direct is-focus">Send</button>
                 </form>
             </div>
         </section>
     </section>
-    <footer class="flex-container">
-        <ul class="nav-bar flex-container">
+    <footer class="flex-container column-container">
+        <ul class="nav-bar flex-container nav-bot">
             <li >
                 <a href="#hello" class="is-focus">HI</a>
             </li>
@@ -235,27 +235,27 @@
         <ul class="contact-bar flex-container">
             <li>
                 <a href="https://github.com/RomiRao" class="is-focus">
-                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands icon fa-github"></i>
                 </a>
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/romina-yazmín-rao-50a61a1ba/" class="is-focus">
-                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands icon fa-linkedin"></i>
                 </a>
             </li>
             <li>
                 <a href="mailto:rominarao96@gmail.com" class="is-focus">
-                    <i class="fa-solid fa-paper-plane"></i>
+                    <i class="fa-solid icon fa-paper-plane"></i>
                 </a>
             </li>
             <li>
                 <a href="https://www.instagram.com/renga.art/?hl=es" class="is-focus">
-                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands icon fa-instagram"></i>
                 </a>
             </li>
         </ul>
         <p>
-            And my favorite color is green...
+            The One Piece is real.
         </p>
     </footer>
 </body>

@@ -1,13 +1,9 @@
-/* ----- PALETA DE COLORES FINAL ----- 
+/* ----- palet color ----- 
 
-#ED6877
-#7D3B54
-#A67A49
-#03B9F3
-#42403C
-#325BBC
-#F8F8F8
+#ED6877 #7D3B54 #A67A49 #03B9F3 #42403C #325BBC #F8F8F8
 */
+
+/* General settings */
 
 * {
     margin: 0;
@@ -21,18 +17,28 @@ body {
 }
 
 img {
-    width: 400px;
+    width: 100%;
 }
 
 ul {
     list-style-type: none;
 }
 
-.flex-container {
-    display: flex;
+.section-container {
+    padding: 130px 20px;
 }
 
-/* color set */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-container {
+    flex-direction: column;
+}
+
+/* Color settings */
 
 .button-direct, .motivational-quote, footer {
     background-color: #7D3B54;
@@ -46,10 +52,7 @@ h2 {
     color: #7D3B54;
 }
 
-header, .presentation, .projects-section {
-    background-color: white;
-}
-/* ---------------------------------------- HEADER STRUCTURE --------------------------------- */
+/* ----------- HEADER STRUCTURE ----------------- */
 
 .header-container {
     justify-content: flex-end;
@@ -59,16 +62,8 @@ header, .presentation, .projects-section {
     position: sticky;
     z-index: 5;
     top: 0;
-}
-
-.nav-container {
-    align-items: center;
-    margin-right: 15%;
-}
-
-.nav-bar {
-    justify-content: flex-end;
-
+    background-color: white;
+    padding-right: 250px;
 }
 
 li {
@@ -78,44 +73,27 @@ li {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-.nav-bar  li  a , .contact-bar-column  li  a {
-    padding: 15px 15px;
+    padding: 15px;
     border-radius: 35px;
 }
 
-.contact-bar-column > li > a {
-    padding-left: 4px;
-}
-
 .button-direct {
-    width: fit-content;
     padding: 10px 30px;
-    border-radius: 20px;
+    border-radius: 35px;
     color: white;
     text-align: center;
-    transition: background-color 0.3s;
+    transition: background-color, border, 0.3s;
 }
 
-.fa-bars {
+.bar-menu {
     display: none;
 }
 
 
-/* --------------------------------- PRESENTATION STRUCTURE ------------------------- */
-
-.presentation-section {
-    justify-content: center;
-    align-items: center;
-    padding: 100px 0px 150px;
-    width: 100%; 
-}
+/* ------- PRESENTATION STRUCTURE ------------------------- */
 
 .presentation-container {
     justify-content: space-evenly;
-    align-items: center;
-    margin: 0;
     width: 80%;
 }
 
@@ -124,7 +102,6 @@ a {
 }
 
 h1 {
-    margin: 0;
     font-size: 70px;
     font-weight: 900;
     color: #ED6877;
@@ -147,18 +124,10 @@ p {
 
 .image-presentation {
     width: 400px;
-    justify-content: center;
 }
 
 
 /* ----------------------------------- KNOWLEDGE STRUCTURE --------------------------- */
-
-.knowledge-section {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 130px 0;
-}
 
 h2 {
     font-size: 60px;
@@ -173,17 +142,15 @@ h2 {
 }
 
 .knowledge-cards {
-    justify-content: center;
     flex-wrap: wrap;
     width: 900px;
 }
 
 .language-card {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     width: 265px;
     height: 225px;
+    padding: 40px 20px;
     margin: 10px;
     border-radius: 8px;
     background-color: white;
@@ -249,15 +216,7 @@ article .fa-brands {
 
 /* ------------------------------- PROJECTS STRUCTURE ------------------------ */
 
-.projects-section {
-    flex-direction: column;
-    align-items: center;
-    padding: 100px 0;
-}
-
-
 .projects-cards {
-    justify-content: center;
     flex-wrap: wrap;
     width: 90%;
 }
@@ -274,11 +233,6 @@ article .fa-brands {
     font-size: 20px;
 }
 
-a img {
-    width: 100%;
-    margin-bottom: 10px;
-}
-
 figcaption {
     margin: 10px;
 }
@@ -287,11 +241,6 @@ figcaption {
 
 /* ------------------------------- CONTACT STRUCTURE -------------------------- */
 
-.contact-section {
-    justify-content: center;
-    padding: 100px 30px;
-    width: 100%;
-}
 
 .contact-card {
     border-radius: 15px;
@@ -303,7 +252,7 @@ figcaption {
 
 .social-media, .form-contact {
     width: 50%;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .contact-description {
@@ -312,12 +261,12 @@ figcaption {
     padding: 10px;
 }
 
-.contact-bar-column li {
+.contact-bar li {
     font-size: 17px;
-    margin: 20px 10px;
+    margin: 10px 10px;
 }
 
-a i {
+.icon {
     font-size: 23px;
     padding: 10px;
     border-radius: 50%;
@@ -332,17 +281,7 @@ a i {
     padding: 10px 12px ;
 }
 
-form div, form {
-    width: 100%;
-
-}
-
-form {
-    flex-direction: column;
-}
-
-input {
-    height: 40px;
+input, textarea {
     width: 100%;
 }
 
@@ -350,14 +289,15 @@ input, textarea, button {
     border-radius: 20px;
     font-size: 17px;
     border: none;
-    background-color: #f5a9b257;
+    height: 40px;
+    background-color: #dee2ea;
     padding: 15px 20px;
     margin: 10px 0;
 }
 
 ::placeholder {
     font-size: 15px;
-    color: #f47180;
+    color: #325BBC;
 }
 
 h2 {
@@ -368,22 +308,17 @@ label {
     font-weight: 700;
 }
 
-.nameLastname {
+.lastname, .name {
     width: 50%;
 }
 
-.nam1 {
-    margin-right: 20px;
+.lastname {
+    margin-left: 10px;
 }
 
 textarea {
     resize: none;
-    width: 100%;
     height: 150px;
-}
-
-.button-send {
-    width: 120px;
 }
 
 input, label {
@@ -391,40 +326,34 @@ input, label {
 }
 
 
-/* --------------------------------------- FOOTER STRUCTURE --------------------------------- */
+/* --------------- FOOTER STRUCTURE --------------------------------- */
 
 footer {
     color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 70px 40px;
 }
 
 .contact-bar {
-    justify-content: center;
     margin: 20px 0;
 }
 
-.contact-bar li {
-    margin: 0 5px;
-}
 
-/* ---------------------------------------- USER INTERACTION ---------------------------------- */
+
+/* ------------- USER INTERACTION ---------------------------------- */
 
 /* HOVER */
 
 .button-direct:hover {
-    background-color: #ED6877;
+    background-color: #325BBC;
 
 }
 
 .contact-bar-column li:hover a, .language-card:hover, .project-card:hover, .nav-bar li:not(.button-direct):hover {
-    color: #ED6877;
+    color: #325BBC;
 }
 
 .language-card:hover, .project-card:hover {
-    border-color: #ED6877;
+    border-color: #325BBC;
 }
 
 li:hover i{
@@ -432,17 +361,23 @@ li:hover i{
     background-color: #7D3B54 ;
 }
 
-.contact-bar-column li:hover i {
-    background-color: #ED6877;
+li:hover .icon {
+    background-color: #325BBC;
 }
 
 /* FOCUS */
 
+.is-focus {
+    transition: border-color, 0.2s;
+}
+
 .is-focus:focus {
-    box-shadow: -1px 0px 8px 1px #ED6877;
+    box-shadow: 0px 0px 10px 1px #325BBC;
     outline: none; 
 }
 
+
+/*SOLUCIONAR*/
 .nav-bot li a:focus {
     box-shadow: -1px 0px 7px 1px white
 }
@@ -553,7 +488,7 @@ li:hover i{
         margin-right: 10%;
     }
 
-    .fa-bars {
+    .bar-menu {
         display: block;
         font-size: 2em;
     }
@@ -624,8 +559,6 @@ li:hover i{
     }
     
     .nav-bot {
-        display: flex;
-        justify-content: center;
         flex-wrap: wrap;
     }
 
