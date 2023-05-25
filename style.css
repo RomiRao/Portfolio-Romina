@@ -337,18 +337,11 @@ footer {
     margin: 20px 0;
 }
 
-
-
 /* ------------- USER INTERACTION ---------------------------------- */
 
 /* HOVER */
 
-.button-direct:hover {
-    background-color: #325BBC;
-
-}
-
-.contact-bar-column li:hover a, .language-card:hover, .project-card:hover, .nav-bar li:not(.button-direct):hover {
+.is-hover:not(.button-direct):hover {
     color: #325BBC;
 }
 
@@ -356,13 +349,9 @@ footer {
     border-color: #325BBC;
 }
 
-li:hover i{
-    color: white;
-    background-color: #7D3B54 ;
-}
-
-li:hover .icon {
+li:hover .icon, .button-direct:hover {
     background-color: #325BBC;
+    color: white;
 }
 
 /* FOCUS */
@@ -373,13 +362,18 @@ li:hover .icon {
 
 .is-focus:focus {
     box-shadow: 0px 0px 10px 1px #325BBC;
+    border-color: #325BBC;
     outline: none; 
 }
 
 
 /*SOLUCIONAR*/
-.nav-bot li a:focus {
+.is-focus-footer:focus {
     box-shadow: -1px 0px 7px 1px white
+}
+
+.is-focus-footer {
+    
 }
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
