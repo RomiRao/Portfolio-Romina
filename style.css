@@ -38,10 +38,14 @@ ul {
     flex-direction: column;
 }
 
+h2 {
+    margin-bottom: 20px;
+}
+
 /* Color settings */
 
 .button-direct, .motivational-quote, footer {
-    background-color: #7D3B54;
+    background-color: #ec4f61;
 }
 
 .knowledge-section, .contact-section {
@@ -66,11 +70,11 @@ h2 {
     padding-right: 250px;
 }
 
-li {
+li:not(.contact-bar li) {
     margin: 15px 20px;
 }
 
-a {
+a:not(.contact-bar a) {
     text-decoration: none;
     color: inherit;
     padding: 15px;
@@ -112,6 +116,7 @@ h3 {
     font-weight: 900;
     margin-bottom: 0;
 }
+
 
 p {
     margin: 0;
@@ -165,7 +170,7 @@ h4 {
     margin-top: 10px
 }
 
-article .fa-brands {
+.language-card .fa-brands {
     font-size: 90px;
 }
 
@@ -216,6 +221,7 @@ article .fa-brands {
 
 /* ------------------------------- PROJECTS STRUCTURE ------------------------ */
 
+
 .projects-cards {
     flex-wrap: wrap;
     width: 90%;
@@ -236,8 +242,6 @@ article .fa-brands {
 figcaption {
     margin: 10px;
 }
-
-
 
 /* ------------------------------- CONTACT STRUCTURE -------------------------- */
 
@@ -263,7 +267,7 @@ figcaption {
 
 .contact-bar li {
     font-size: 17px;
-    margin: 10px 10px;
+    margin: 10px 5px;
 }
 
 .icon {
@@ -272,7 +276,7 @@ figcaption {
     border-radius: 50%;
     background-color: white;
     border: 1px solid white;
-    color: #7D3B54;
+    color: #ec4f61;
     margin-right: 7px;
     transition: background-color 0.2s;
 }
@@ -290,7 +294,7 @@ input, textarea, button {
     font-size: 17px;
     border: none;
     height: 40px;
-    background-color: #dee2ea;
+    background-color: #eeeff2;
     padding: 15px 20px;
     margin: 10px 0;
 }
@@ -298,10 +302,6 @@ input, textarea, button {
 ::placeholder {
     font-size: 15px;
     color: #325BBC;
-}
-
-h2 {
-    margin-bottom: 20px;
 }
 
 label {
@@ -339,18 +339,46 @@ footer {
 
 /* ------------- USER INTERACTION ---------------------------------- */
 
+/* FORM VALIDATION */
+
+/*Valid*/
+
+input:valid, textarea:valid {
+    border: 1px solid rgb(105, 171, 6);
+}
+
+input:valid:focus, textarea:valid:focus {
+    border: 1px solid rgb(105, 171, 6);
+    box-shadow: 0px 0px 10px 1px rgb(105, 171, 6);
+}
+
+/*Invalid*/
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input:invalid:focus {
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px 1px red;
+}
+
+input:placeholder-shown, textarea:placeholder-shown {
+    border: none;
+}
+
 /* HOVER */
 
-.is-hover:not(.button-direct):hover {
-    color: #325BBC;
+.is-hover:hover {
+    color: #5ea1ee;
 }
 
 .language-card:hover, .project-card:hover {
-    border-color: #325BBC;
+    border-color: #5ea1ee;
 }
 
 li:hover .icon, .button-direct:hover {
-    background-color: #325BBC;
+    background-color: #5ea1ee;
     color: white;
 }
 
@@ -361,19 +389,13 @@ li:hover .icon, .button-direct:hover {
 }
 
 .is-focus:focus {
-    box-shadow: 0px 0px 10px 1px #325BBC;
-    border-color: #325BBC;
+    box-shadow: 0px 0px 10px 1px #5ea1ee;
+    border-color: #5ea1ee;
     outline: none; 
 }
 
-
-/*SOLUCIONAR*/
 .is-focus-footer:focus {
     box-shadow: -1px 0px 7px 1px white
-}
-
-.is-focus-footer {
-    
 }
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */

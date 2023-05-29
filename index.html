@@ -204,11 +204,11 @@
                     <div class="flex-container">
                         <label class="name">
                             <p>Name *</p>
-                            <input type="text" name="name" id="idname" placeholder="Ada" class="is-focus" required>
+                            <input type="text" name="name" id="idname" placeholder="Ada" class="is-focus" required pattern="^[a-z0-9]{1,15}$">
                         </label>
                         <label class="lastname">
                             <p>Last name *</p>
-                            <input type="text" name="lastname" id="idlastname" class="is-focus" placeholder="Lovelace" required>
+                            <input type="text" name="lastname" id="idlastname" class="is-focus" placeholder="Lovelace" required >
                         </label>
                     </div>
                     <label for="idemail">Email *</label>
