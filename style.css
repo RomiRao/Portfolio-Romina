@@ -254,6 +254,7 @@ figcaption {
     width: 1100px;
     padding: 60px;
     border: 1px solid #f8cfcc ;
+    align-items: start;
 }
 
 .social-media, .form-contact {
@@ -342,6 +343,7 @@ footer {
     margin: 20px 0;
 }
 
+/*fix this romi*/
 .contact-bar a {
     width: fit-content;
     height: fit-content;
