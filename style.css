@@ -1,6 +1,6 @@
 /* ----- palet color ----- 
 
-#ED6877 #7D3B54 #A67A49 #03B9F3 #42403C #325BBC #F8F8F8
+#ED6877 #7D3B54 #03B9F3 #42403C #325BBC #F8F8F8
 */
 
 /* General settings */
@@ -24,6 +24,12 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+    border-radius: 35px;
+}
+
 .section-container {
     padding: 130px 20px;
 }
@@ -40,6 +46,10 @@ ul {
 
 h2 {
     margin-bottom: 20px;
+}
+
+li {
+    margin: 5px;
 }
 
 /* Color settings */
@@ -70,23 +80,15 @@ h2 {
     padding-right: 250px;
 }
 
-li:not(.contact-bar li) {
-    margin: 15px 20px;
-}
-
-a:not(.contact-bar a) {
-    text-decoration: none;
-    color: inherit;
-    padding: 15px;
-    border-radius: 35px;
+.nav-bar a {
+    padding: 10px 13px;
 }
 
 .button-direct {
-    padding: 10px 30px;
-    border-radius: 35px;
     color: white;
     text-align: center;
     transition: background-color, border, 0.3s;
+    padding: 10px 30px;
 }
 
 .bar-menu {
@@ -265,14 +267,15 @@ figcaption {
     padding: 10px;
 }
 
-.contact-bar li {
-    font-size: 17px;
-    margin: 10px 5px;
+.contact-bar-column a {
+    padding: 2px 10px 2px 5px;
+    width: fit-content;
+    justify-content: flex-start;
 }
 
 .icon {
-    font-size: 23px;
-    padding: 10px;
+    font-size: 20px;
+    padding: 8px;
     border-radius: 50%;
     background-color: white;
     border: 1px solid white;
@@ -282,8 +285,10 @@ figcaption {
 }
 
 .fa-instagram, .fa-linkedin {
-    padding: 10px 12px ;
+    padding: 8px 10px ;
 }
+
+/* Form settings */
 
 input, textarea {
     width: 100%;
@@ -335,6 +340,11 @@ footer {
 
 .contact-bar {
     margin: 20px 0;
+}
+
+.contact-bar a {
+    width: fit-content;
+    height: fit-content;
 }
 
 /* ------------- USER INTERACTION ---------------------------------- */
@@ -402,7 +412,6 @@ li:hover .icon, .button-direct:hover {
 
 
 @media (max-width: 1245px) {
-
 
     .projects-cards {
         width: 100%;
