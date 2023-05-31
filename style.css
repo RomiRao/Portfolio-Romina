@@ -92,7 +92,7 @@ h2 {
     margin: 0;
 }
 
-.bar-menu {
+#bar-menu {
     display: none;
 }
 
@@ -202,10 +202,7 @@ h4 {
     color: #F34F29;
 }
 
-
-
-
-/* --------------------------- MOTIVATIONAL STRUCTURE ---------------------- */
+/* ----------------- MOTIVATIONAL STRUCTURE -------------------- */
 
 .motivational-quote {
     text-align: center;
@@ -334,7 +331,7 @@ input, label {
 }
 
 
-/* --------------- FOOTER STRUCTURE --------------------------------- */
+/* --------------- FOOTER STRUCTURE --------------------- */
 
 footer {
     color: white;
@@ -524,7 +521,7 @@ li:hover .icon, .button-direct:hover {
         margin-right: 10%;
     }
 
-    .bar-menu {
+    #bar-menu {
         display: block;
         font-size: 2em;
     }
