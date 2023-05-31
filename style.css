@@ -89,6 +89,7 @@ h2 {
     text-align: center;
     transition: background-color, border, 0.3s;
     padding: 10px 30px;
+    margin: 0;
 }
 
 .bar-menu {
