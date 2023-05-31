@@ -77,10 +77,10 @@ h2 {
     z-index: 5;
     top: 0;
     background-color: white;
-    padding-right: 250px;
+    padding-right: 20%;
 }
 
-.nav-bar a {
+.nav-bar a:not(.button-direct) {
     padding: 10px 13px;
 }
 
@@ -90,10 +90,6 @@ h2 {
     transition: background-color, border, 0.3s;
     padding: 10px 30px;
     margin: 0;
-}
-
-.bar-menu {
-    display: none;
 }
 
 
@@ -409,6 +405,10 @@ li:hover .icon, .button-direct:hover {
 
 .is-focus-footer:focus {
     box-shadow: -1px 0px 7px 1px white
+}
+
+.bar-menu {
+    display: none;
 }
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
