@@ -92,6 +92,11 @@ h2 {
     margin: 0;
 }
 
+.bar-menu {
+    display: none;
+}
+
+
 
 /* ------- PRESENTATION STRUCTURE ------------------------- */
 
@@ -340,13 +345,7 @@ footer {
     margin: 20px 0;
 }
 
-/*fix this romi*/
-.contact-bar a {
-    width: fit-content;
-    height: fit-content;
-}
-
-/* ------------- USER INTERACTION ---------------------------------- */
+/* ------------- USER INTERACTION ---------------------- */
 
 /* FORM VALIDATION */
 
@@ -393,22 +392,31 @@ li:hover .icon, .button-direct:hover {
 
 /* FOCUS */
 
-.is-focus {
+.focus-outline {
+    outline: none;
+}
+
+.is-focus, .is-focus-footer, .icon-footer {
     transition: border-color, 0.2s;
 }
 
 .is-focus:focus {
     box-shadow: 0px 0px 10px 1px #5ea1ee;
     border-color: #5ea1ee;
-    outline: none; 
 }
 
 .is-focus-footer:focus {
     box-shadow: -1px 0px 7px 1px white
 }
 
-.bar-menu {
-    display: none;
+.contact-bar-footer a:focus .icon-footer {
+    box-shadow: -1px 0px 7px 1px white
+}
+
+/*ACTIVE*/
+
+.button-direct:active {
+    background-color: #325BBC;
 }
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
