@@ -178,7 +178,7 @@ h4 {
     font-size: 90px;
 }
 
-.fa-html5 {
+.fa-html5, .fa-git-alt {
     color: #E54D26;
 }
 
@@ -196,10 +196,6 @@ h4 {
 
 .fa-react {
     color: #61DAFB;
-}
-
-.fa-git-alt {
-    color: #F34F29;
 }
 
 /* ----------------- MOTIVATIONAL STRUCTURE -------------------- */
@@ -222,10 +218,10 @@ h4 {
 
 /* ------------------------------- PROJECTS STRUCTURE ------------------------ */
 
-
 .projects-cards {
     flex-wrap: wrap;
-    width: 90%;
+    width: 1070px;
+    justify-content: flex-start;
 }
 
 
@@ -450,20 +446,12 @@ input:invalid:not(:placeholder-shown):focus {
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
 
-
-@media (max-width: 1245px) {
-
-    .projects-cards {
-        width: 100%;
-    }
-}
-
 /* --- 1100px --- */
 
 @media (max-width: 1100px) {
 
     .presentation {
-        width: 100%;
+        width: 95%;
     }
     
     .presentation-container {
