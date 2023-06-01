@@ -382,7 +382,7 @@ footer {
     border-color: #5ea1ee;
 }
 
-li:hover .icon, .button-direct:hover {
+a:hover .icon, .button-direct:hover {
     background-color: #5ea1ee;
     color: white;
 }
