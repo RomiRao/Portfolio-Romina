@@ -218,9 +218,13 @@ h4 {
 
 /* ------------------------------- PROJECTS STRUCTURE ------------------------ */
 
+.projects-container {
+    max-width: 1054px;
+}
+
 .projects-cards {
     flex-wrap: wrap;
-    width: 1070px;
+    width: 100%;
     justify-content: flex-start;
 }
 
@@ -470,9 +474,13 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .projects-cards > a {
-        width: 30%;
+        width: 31%;
     }
 
+
+    .projects-container {
+        width: 100%;
+    }
 }
 
 /* --- 900px --- */
@@ -480,7 +488,7 @@ input:invalid:not(:placeholder-shown):focus {
 @media (max-width: 900px) {
 
     .projects-cards > a {
-        width: 40%;
+        width: 48%;
     }
 
     .contact-section {
@@ -616,7 +624,7 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .projects-cards > a {
-        width: 90%;
+        width: 100%;
     }
 
 }
