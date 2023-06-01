@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c89c9de4f7.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" type="image/x-icon" href="./resourses/xmarkicon.svg" sizes="195x195"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./resourses/xmarkicon.svg" sizes="195x195" />
     <meta property="og:title" content="Portfolio Romina Rao">
     <meta property="og:description" content="My first own portfolio">
     <meta property="og:image" content="https://romirao.github.io/Portfolio-Romina/resourses/profile-final.png">
@@ -117,7 +117,8 @@
             Projects
         </h2>
         <p class="section-description">
-            Here are some examples of what I have been working on. <br>All the ilustrations used on this web were made by myself.
+            Here are some examples of what I have been working on. <br>All the ilustrations used on this web were made
+            by myself.
         </p>
         <div class="projects-cards flex-container">
             <a href="" target="_blank" class="project-card focus-outline is-focus is-hover">
@@ -183,7 +184,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/romina-yazmín-rao-50a61a1ba/" class="focus-outline is-focus is-hover flex-container">
+                        <a href="https://www.linkedin.com/in/romina-yazmín-rao-50a61a1ba/"
+                            class="focus-outline is-focus is-hover flex-container">
                             <i class="fa-brands icon fa-linkedin"></i>
                             Romina Yazmin Rao
                         </a>
@@ -195,7 +197,8 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/renga.art/?hl=es" class="focus-outline is-focus is-hover flex-container">
+                        <a href="https://www.instagram.com/renga.art/?hl=es"
+                            class="focus-outline is-focus is-hover flex-container">
                             <i class="fa-brands icon fa-instagram"></i>
                             renga.art
                         </a>
@@ -206,21 +209,35 @@
                 <h2>
                     Contact me
                 </h2>
-                <form >
+                <form>
                     <div class="flex-container">
+                        <!-- NAME -->
                         <label class="name">
                             <p>Name *</p>
-                            <input type="text" name="name" id="idname" placeholder="Ada" class="focus-outline is-focus" required pattern="^[a-z0-9]{1,15}$">
+                            <input type="text" name="name" id="idname" placeholder="Ada" class="focus-outline is-focus valid-container"
+                                required>
+                            <i class="fa-regular fa-circle-check"></i>
                         </label>
                         <label class="lastname">
                             <p>Last name *</p>
-                            <input type="text" name="lastname" id="idlastname" class="focus-outline is-focus" placeholder="Lovelace" required >
+                            <input type="text" name="lastname" id="idlastname" class="focus-outline is-focus valid-container"
+                                placeholder="Lovelace" required>
+                                <i class="fa-regular fa-circle-check"></i>
                         </label>
                     </div>
+                    <!-- EMAIL -->
+                    <div class="email-container">
                     <label for="idemail">Email *</label>
-                    <input type="email" name="email" id="idemail" placeholder="example@gmail.com" class="focus-outline is-focus" required>
+                    <input type="email" name="email" id="idemail" placeholder="example@gmail.com" class="focus-outline is-focus valid-container" required>
+                    <i class="fa-regular fa-circle-check"></i>
+                    <i class="fa-regular fa-circle-xmark"></i>
+                    </div>
+                    <!-- MESSAGE -->
+                    <div class="message-container">
                     <label for="idmessage">Message *</label>
-                    <textarea name="message" name="message" id="idmessage" cols="30" rows="10" placeholder="Type your message" class="focus-outline is-focus" required></textarea>
+                    <textarea name="message" name="message" id="idmessage" cols="30" rows="10" placeholder="Type your message" class="focus-outline is-focus valid-container" required></textarea>
+                    <i class="fa-regular fa-circle-check"></i>
+                    </div>
                     <button type="submit" name="button" class="button-direct focus-outline is-focus">Send</button>
                 </form>
             </div>
@@ -229,7 +246,7 @@
     <!-- Footer -->
     <footer class="flex-container column-container">
         <ul class="nav-bar flex-container nav-bot">
-            <li >
+            <li>
                 <a href="#hello" class="focus-outline is-focus is-hover is-focus-footer">HI</a>
             </li>
             <li>

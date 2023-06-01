@@ -330,7 +330,31 @@ input, label {
     font-size: 18px;
 }
 
+/* VALIDATION STYLES */
 
+.name, .lastname, .message-container, .email-container {
+    position: relative;
+}
+
+.fa-regular {
+    position: absolute;
+    top: 43px;
+    right: 15px;
+    font-size: 17px;
+    opacity: 0;
+}
+
+.message-container .fa-regular {
+    top: 150px;
+}
+
+.fa-circle-xmark {
+    color: red;
+}
+
+.fa-circle-check {
+    color: green;
+}
 /* --------------- FOOTER STRUCTURE --------------------- */
 
 footer {
@@ -343,34 +367,6 @@ footer {
 }
 
 /* ------------- USER INTERACTION ---------------------- */
-
-/* FORM VALIDATION */
-
-/*Valid*/
-
-input:valid, textarea:valid {
-    border: 1px solid rgb(105, 171, 6);
-}
-
-input:valid:focus, textarea:valid:focus {
-    border: 1px solid rgb(105, 171, 6);
-    box-shadow: 0px 0px 10px 1px rgb(105, 171, 6);
-}
-
-/*Invalid*/
-
-input:invalid {
-    border: 1px solid red;
-}
-
-input:invalid:focus {
-    border: 1px solid red;
-    box-shadow: 0px 0px 10px 1px red;
-}
-
-input:placeholder-shown, textarea:placeholder-shown {
-    border: none;
-}
 
 /* HOVER */
 
@@ -414,6 +410,38 @@ li:hover .icon, .button-direct:hover {
 
 .button-direct:active {
     background-color: #325BBC;
+}
+
+/* FORM VALIDATION */
+
+/*Valid*/
+
+.valid-container:valid + .fa-circle-check {
+    opacity: 1;
+}
+
+input:valid, textarea:valid {
+    border: 1px solid rgb(105, 171, 6);
+}
+
+input:valid:focus, textarea:valid:focus {
+    border: 1px solid rgb(105, 171, 6);
+    box-shadow: 0px 0px 10px 1px rgb(105, 171, 6);
+}
+
+/*Invalid*/
+
+#idemail:not(:placeholder-shown):invalid + .fa-circle-xmark {
+    opacity: 1;
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 1px solid red;
+}
+
+input:invalid:not(:placeholder-shown):focus {
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px 1px red;
 }
 
 /* ---------------------- MEDIA RESPONSIVE -------------------- */
