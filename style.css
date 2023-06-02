@@ -473,6 +473,11 @@ input:invalid:not(:placeholder-shown):focus {
     .projects-container {
         width: 100%;
     }
+    
+    
+    .knowledge-cards {
+        width: 100%;
+    }
 
 }
 
@@ -526,16 +531,6 @@ input:invalid:not(:placeholder-shown):focus {
         padding-right: 50px;
     }
 }
-
-/* --- 920px --- */
-
-@media (max-width: 920px) {
-
-    .knowledge-cards {
-        width: 100%;
-    }
-}
-
 /* --- 610px --- */
 
 @media (max-width: 610px){
@@ -550,6 +545,10 @@ input:invalid:not(:placeholder-shown):focus {
 
     .knowledge-card {
         width: 50%;
+    }
+
+    .language-card .fa-brands {
+        font-size: 4.5em;
     }
 }
 
@@ -571,7 +570,7 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .image-presentation {
-        width: 85%;
+        width: 100%;
     }
 
     img {
