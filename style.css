@@ -77,7 +77,6 @@ li {
 /* ----------- HEADER STRUCTURE ----------------- */
 
 .header-container {
-    justify-content: flex-end;
     width: 100%;
     height: 80px;
     box-shadow: #bd2f6535 0px 10px 6px -1px, #b1326325 0px 2px 4px -1px;
@@ -85,7 +84,12 @@ li {
     z-index: 5;
     top: 0;
     background-color: white;
-    padding-right: 20%;
+}
+
+.nav-container {
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 1000px;
 }
 
 .nav-bar a:not(.button-direct) {
@@ -469,6 +473,7 @@ input:invalid:not(:placeholder-shown):focus {
     .projects-container {
         width: 100%;
     }
+
 }
 
 /* --- 900px --- */
@@ -509,6 +514,17 @@ input:invalid:not(:placeholder-shown):focus {
     .social-media {
         margin-bottom: 50px;
     }
+
+    
+    .nav-top {
+        display: none;
+    }
+
+    #bar-menu {
+        display: block;
+        font-size: 2em;
+        padding-right: 50px;
+    }
 }
 
 /* --- 920px --- */
@@ -520,23 +536,7 @@ input:invalid:not(:placeholder-shown):focus {
     }
 }
 
-/* --- 830px --- */
-
-@media (max-width: 830px) {
-
-    .nav-top {
-        display: none;
-    }
-
-    .nav-container {
-        margin-right: 10%;
-    }
-
-    #bar-menu {
-        display: block;
-        font-size: 2em;
-    }
-}
+/* --- 610px --- */
 
 @media (max-width: 610px){
     
@@ -660,6 +660,14 @@ input:invalid:not(:placeholder-shown):focus {
 
     .language-card {
         width: 60%;
+    }
+
+    .header-container {
+        height: 60px;
+    }
+
+    #bar-menu {
+        font-size: 1.5em;
     }
 
 }
