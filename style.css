@@ -476,7 +476,7 @@ input:invalid:not(:placeholder-shown):focus {
     
     
     .knowledge-cards {
-        width: 100%;
+        width: 95%;
     }
 
 }
@@ -548,7 +548,14 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .language-card .fa-brands {
-        font-size: 4.5em;
+        font-size: 5em;
+    }
+}
+
+@media (max-width: 570px) {
+    .language-card {
+        width: 45%;
+        height: 45%;
     }
 }
 
@@ -589,6 +596,10 @@ input:invalid:not(:placeholder-shown):focus {
         width: 100%;
     }
 
+    .language-card .fa-brands {
+        font-size: 4em;
+    }
+
 }
 
 /* --- 500px --- */
@@ -621,7 +632,17 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .language-card {
-        margin: 5px;
+        width: 43%;
+        height: 40%;
+        margin: 6px;
+    }
+
+    h4 {
+        font: 15px;
+    }
+
+    .language-card .fa-brands {
+        font-size: 3em;
     }
 
 }
@@ -637,7 +658,7 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .language-card {
-        width: 80%;
+        width: 70%;
     }
 
     .header-container {
