@@ -306,11 +306,11 @@ label {
 }
 
 .lastname, .name {
-    width: 50%;
+    width: 48%;
 }
 
-.lastname {
-    margin-left: 10px;
+.name-container {
+    justify-content: space-between;
 }
 
 textarea {
@@ -427,7 +427,7 @@ input:valid:focus, textarea:valid:focus {
 
 /*Invalid*/
 
-#idemail:not(:placeholder-shown):invalid + .fa-circle-xmark {
+.invalid-container:invalid + .fa-circle-xmark {
     opacity: 1;
 }
 
