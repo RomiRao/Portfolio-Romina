@@ -31,7 +31,7 @@ a {
 }
 
 .section-container {
-    padding: 130px 20px;
+    padding: 130px 0px;
 }
 
 .flex-container {
@@ -145,7 +145,7 @@ h3 {
 
 .knowledge-cards {
     flex-wrap: wrap;
-    width: 900px;
+    max-width: 1000px;
 }
 
 .language-card {
@@ -547,35 +547,11 @@ input:invalid:not(:placeholder-shown):focus {
     .contact-bar-column > li {
         width: 100%;
     } 
+
+    .knowledge-card {
+        width: 50%;
+    }
 }
-
-
-/* ---580px --- */
-
-@media (max-width: 580px) {
-
-    .knowledge-cards {
-        padding: 10px;
-    }
-
-    .language-card {
-        width: 45%;
-    }
-
-    .fa-brands:not(a > i):not(li > i) {
-        font-size: 4em;
-    }
-
-    .language-card {
-        height: 180px;
-        margin: 8px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-    
-} 
 
 /* --- 550px --- */
 
@@ -583,6 +559,10 @@ input:invalid:not(:placeholder-shown):focus {
 
     h1 {
         font-size: 50px;
+    }
+
+    h4 {
+        font-size: 18px;
     }
 
     .text-presentation {
@@ -599,7 +579,7 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     h2 {
-        font-size: 55px;
+        font-size: 35px;
     }
     
     .nav-bot {
@@ -642,7 +622,6 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .language-card {
-        height: 150px;
         margin: 5px;
     }
 
@@ -659,7 +638,7 @@ input:invalid:not(:placeholder-shown):focus {
     }
 
     .language-card {
-        width: 60%;
+        width: 80%;
     }
 
     .header-container {
