@@ -1,36 +1,36 @@
 # **Porfolio Romina Rao**
 
-## ABOUT
+## ABOUT 
 
 This is the first project I'm working on. I made it for the first evaluation in the Frontend development career from ADA ITW. The purpose of this project is to apply all skills learned until the date Using HTML and CSS. The design implemented is based on the institutions example website. But the artwork was made by myself. With love ❤️
 
+<a href="https://romirao.github.io/Portfolio-Romina/"> <img src="https://romirao.github.io/Portfolio-Romina/resources/romirao.github.io_Portfolio-Romina_.png" style="width: 50%;" alt="website example"/> </a>
 
-
-#Skills used
+## Skills used
 <img src="https://skillicons.dev/icons?i=git,css,html"/>
 
-## STRUCTURE
+## WEBSITE STRUCTURE
 
-### Header
+### ✦ Header 
 It has a header with a navigation list inside to direct the user to the different sections.
 
-### Presentation
+### ✦ Presentation 
 It has a short description of myself and a self-portrait artwork. It also has a link that directs
 the user to the projects section.
 
-### Knowledge
+### ✦ Knowledge 
 This section lists the skills that we'll learn during the career.
 
-### Quote
+### ✦ Quote 
 It contains a quote that motivates me.
 
-### Projects
+### ✦ Projects 
 About all the projects we're going to make during the year.
 
-### Contact section
+### ✦ Contact section 
 This section has a contact form and all my social media links. So the user can reach me.
 
-### Footer
+### ✦ Footer 
 Just like the contact section and a header, it has my social media and links to navigate around the website.
 
 
