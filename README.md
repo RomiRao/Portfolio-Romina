@@ -28,9 +28,9 @@ Just like the contact section and a header, it has my social media and links to 
 
 ## RESOURCES
 For this website I used different kinds of resources:
-⭐ Icons -> [FontAwesome](https://fontawesome.com/)
-⭐ Font-style -> [Google Fonts](https://fonts.google.com/)
-⭐ Illustrations -> [Myself 💞](https://instagram.com/renga.art/)
+-⭐ Icons -> [FontAwesome](https://fontawesome.com/)
+-⭐ Font-style -> [Google Fonts](https://fonts.google.com/)
+-⭐ Illustrations -> [Myself 💞](https://instagram.com/renga.art/)
 
 ### Ilustration examples
 ![Imagen de Sailor Moon](https://imagen.png) ![Imagen de Sailor Moon](https://imagen.png)
